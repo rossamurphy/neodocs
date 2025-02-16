@@ -7,6 +7,18 @@ I write all of my code in NeoVim. I've spent a lot of time tweaking my config, i
 
 This lets you write write your documents in Markdown format, in your favourite terminal. Use e-macs, neovim, classic vim, anything you like, really. Just write Markdown, be happy, be free. Once you click save, this will auto-compile your work to a nice-looking PDF. 
 
+# Can I see an example?
+
+Yes.
+
+
+
+https://github.com/user-attachments/assets/b9ecb75e-1a1f-4b5a-b5d2-fbc67e9e6078
+
+
+
+
+
 # How do I get started?
 
 Pandoc and basictext (for compilation), skim (for viewing), and entr (for file watching)
