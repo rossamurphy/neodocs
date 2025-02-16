@@ -15,6 +15,14 @@ Yes.
 
 https://github.com/user-attachments/assets/b9ecb75e-1a1f-4b5a-b5d2-fbc67e9e6078
 
+# Can I write equations too?
+
+Yes.
+
+
+
+https://github.com/user-attachments/assets/b5c63348-a46c-4f87-8a2b-ba435ee6453a
+
 
 
 
