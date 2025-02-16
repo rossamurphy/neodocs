@@ -1,4 +1,13 @@
-# Setup 
+
+# Why?
+
+I write all of my code in NeoVim. I've spent a lot of time tweaking my config, in a bid to make me as efficient as possible while writing code. It feels silly to me, that whenever I need to write a "real-world" document (read: PDF), I have to go and use a completely unconfigurable text editor, like Microsoft Word, or Apple Pages. I want to be able to write beautiful long-form documents, without having to endure the straitjacket of conventional word-processing software. I couldn't find any solution, so I built this one.
+
+# What can I do with this?
+
+This lets you write write your documents in Markdown format, in your favourite terminal. Use e-macs, neovim, classic vim, anything you like, really. Just write Markdown, be happy, be free. Once you click save, this will auto-compile your work to a nice-looking PDF. 
+
+# How do I get started?
 
 Pandoc and basictext (for compilation), skim (for viewing), and entr (for file watching)
 ```zsh
@@ -20,7 +29,7 @@ chmod +x ./compile.sh
 chmod +x ./watcher.sh
 ```
 
-# Usage
+# How do I use it?
 
 ## Option 1 - Manually run the ./compile.sh script when you want to
 
@@ -30,7 +39,7 @@ chmod +x ./watcher.sh
 - The PDF files will have the same name as each of the Markdown files, and will
   be in the same directory as each of the Markdown files.
 
-### How does the compile script work?
+### How does this 'compile script' actually work?
 
 - The compile script compares the LAST-UPDATED time of each file with its
   LAST-COMPILATION time.
