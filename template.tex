@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+
+% Packages
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% math symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Title metadata from your YAML
+\title{$title$}
+\author{$author$}
+\date{$date$}
+
+% Geometry settings from your YAML
+\geometry{
+    left=25mm,
+    right=25mm,
+    top=25mm,
+    bottom=25mm
+}
+
+% Hyperref settings from your YAML
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+\setlength{\parskip}{6pt} % Adjust the value (e.g., 6pt, 10pt, etc.)
+\setlength{\parindent}{0pt}
+
+
+% Define tightlist
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+
+% Generate title
+% comment in this to have a title page
+\maketitle
+
+% Table of contents
+% comment in this to put table of contents back
+% \setcounter{tocdepth}{4}
+% \tableofcontents
+
+% New page
+% \newpage
+
+$body$
+\end{document}

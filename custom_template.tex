@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{hyperref}
+
+% Define \tightlist command
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Redefine footnote to collect them
+\usepackage{etoolbox}
+\newcounter{footnotecount}
+\let\oldfootnote\footnote
+\renewcommand{\footnote}[1]{%
+  \stepcounter{footnotecount}%
+  \oldfootnote{\label{fn:\thefootnotecount}#1}%
+  \addtocounter{footnote}{-1}%
+}
+
+\begin{document}
+
+$body$
+
+\section*{Notes}
+\addcontentsline{toc}{section}{Notes}
+
+% Print collected footnotes
+\setcounter{footnote}{0}
