@@ -1,11 +1,11 @@
 
 # Why?
 
-I write all of my code in NeoVim. I've spent a lot of time tweaking my config, in a bid to make me as efficient as possible while writing code. It feels silly to me, that whenever I need to write a "real-world" document (read: PDF), I have to go and use a completely unconfigurable text editor, like Microsoft Word, or Apple Pages. I want to be able to write beautiful long-form documents, without having to endure the straitjacket of conventional word-processing software. I couldn't find any solution, so I built this one.
+I write a lot of code in a terminal. It feels silly to me, that whenever I need to write a "real-world" document (read: PDF), I have to go and use a completely unconfigurable text editor, like Microsoft Word, or Apple Pages. It would be nice to actually be able to write nice-looking long-form documents, without having to endure the interface of conventional word-processing software. I couldn't find any solution, so I built this one.
 
 # What can I do with this?
 
-This lets you write write your documents in Markdown format, in your favourite terminal. Use e-macs, neovim, classic vim, anything you like, really. Just write Markdown, be happy, be free. Once you click save, this will auto-compile your work to a nice-looking PDF. 
+This lets you write write your documents in Markdown format, in your favourite terminal. Use e-macs, neovim, classic vim, anything you like, really. Just write Markdown and be happy. Once you click save, this will auto-compile your work to a nice-looking PDF. 
 
 # Can I see an example?
 
