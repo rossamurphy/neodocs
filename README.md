@@ -1,17 +1,23 @@
 
 # Why?
 
-I write a lot of code in a terminal. It feels silly to me, that whenever I need to write a "real-world" document (read: PDF), I have to go and use a completely unconfigurable text editor, like Microsoft Word, or Apple Pages. It would be nice to actually be able to write nice-looking long-form documents, without having to endure the interface of conventional word-processing software. I couldn't find any solution, so I built this one.
+I write a lot of code in a terminal. It feels silly to me, that whenever I need
+to write a "real-world" document (read: PDF), I have to go and use a completely
+unconfigurable text editor, like Microsoft Word, or Apple Pages. It would be
+nice to actually be able to write nice-looking long-form documents, without
+having to endure the interface of conventional word-processing software. I
+couldn't find any solution, so I built this one.
 
 # What can I do with this?
 
-This lets you write write your documents in Markdown format, in your favourite terminal. Use e-macs, neovim, classic vim, anything you like, really. Just write Markdown and be happy. Once you click save, this will auto-compile your work to a nice-looking PDF. 
+This lets you write write your documents in Markdown format, in your favourite
+terminal. Use e-macs, neovim, classic vim, anything you like, really. Just
+write Markdown and be happy. Once you click save, this will auto-compile your
+work to a nice-looking PDF.
 
 # Can I see an example?
 
 Yes.
-
-
 
 https://github.com/user-attachments/assets/b9ecb75e-1a1f-4b5a-b5d2-fbc67e9e6078
 
@@ -19,11 +25,7 @@ https://github.com/user-attachments/assets/b9ecb75e-1a1f-4b5a-b5d2-fbc67e9e6078
 
 Yes.
 
-
-
 https://github.com/user-attachments/assets/b5c63348-a46c-4f87-8a2b-ba435ee6453a
-
-
 
 
 
@@ -59,16 +61,16 @@ chmod +x ./watcher.sh
 - The PDF files will have the same name as each of the Markdown files, and will
   be in the same directory as each of the Markdown files.
 
-## Option 2 - Let a file watcher do it for you 
+## Option 2 - Let a file watcher do it for you
 
-- Run the ./watcher.sh script. 
+- Run the ./watcher.sh script.
 - The watcher script watches for changes to markdown files in the git directory.
 - If a change is detected, the ./compile.sh script is run automatically.
 - To stop the script, just ctrl-c in the terminal.
 - If you lose the process it's running in, you can find it by doing `ps aux |
   grep watcher.sh`.
 
-  
+
 # How does this 'compile script' actually work?
 
 - The compile script compares the LAST-UPDATED time of each file with its
@@ -84,14 +86,14 @@ chmod +x ./watcher.sh
   in the directory (which would be slow).
 - This is preferred to git diff, because comparing it to git diff (rather than
   each individual file's last update time) would mean files would continuously
-  get re-compiled every time you ran the script until you committed your changes. 
+  get re-compiled every time you ran the script until you committed your changes.
 
 
 # How to emulate the set up in the video
 
 - Split a full screen window, with vim on the left-hand-side, and skim on the right-hand-side.
 - Open a PDF (from the directory) in skim.
-- Open skim settings, go to "Sync", tick "Check for file changes" and "reload automatically". 
+- Open skim settings, go to "Sync", tick "Check for file changes" and "reload automatically".
 - Open another little tmux pane at the bottom of your vim window.
 - Run `./watcher.sh` in that terminal there.
 - Go back to vim.

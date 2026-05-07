@@ -1,5 +1,5 @@
 install:
-	brew install basictex pandoc
+	brew install basictex pandoc skim entr
 	npm install --global mermaid-filter
 
 
